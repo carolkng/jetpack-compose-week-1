@@ -29,7 +29,7 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MyTheme {
-                val dogId = intent.getSerializableExtra("dogId") as? String ?: return@MyTheme
+                val dogId = intent.getStringExtra("dogId") ?: return@MyTheme
                 Detail(Dogabase.getDog(dogId))
             }
         }
