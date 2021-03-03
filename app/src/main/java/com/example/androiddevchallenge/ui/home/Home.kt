@@ -29,6 +29,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
+import com.example.androiddevchallenge.DetailActivity
 import com.example.androiddevchallenge.data.Dog
 import com.example.androiddevchallenge.data.Dogabase
 import com.example.androiddevchallenge.data.SampleDogProvider
@@ -44,7 +45,7 @@ fun Home(context: Context) {
 
                 Button(
                     onClick = {
-                        Intent("DetailActivity").apply {
+                        Intent(context, DetailActivity::class.java).apply {
                             putExtra("dogId", dog.id)
                             context.startActivity(this)
                         }
