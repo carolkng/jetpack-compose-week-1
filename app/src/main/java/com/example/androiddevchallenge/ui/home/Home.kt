@@ -40,7 +40,7 @@ fun Home(context: Context) {
         item {
             Text("Snakes are actually dogs here")
 
-            listOf("dog1", "dog2").forEach {
+            Dogabase.getDogs().forEach {
                 val dog = Dogabase.getDog(it)
 
                 Button(

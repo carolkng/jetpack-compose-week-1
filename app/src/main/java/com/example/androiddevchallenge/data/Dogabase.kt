@@ -31,5 +31,7 @@ class Dogabase {
             return DOGABASE[dogId]
                 ?: Dog("id", "Placeholder!", "no more dogs :(", R.drawable.ic_launcher_background, false)
         }
+
+        fun getDogs(): Set<String> = DOGABASE.keys
     }
 }
