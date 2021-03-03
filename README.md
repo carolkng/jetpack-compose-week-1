@@ -1,4 +1,4 @@
-# Put title of your app here
+# lord i hope no one sees this
 
 ![Workflow result](https://github.com/carolkng/jetpack-compose-week-1/workflows/Check/badge.svg)
 
